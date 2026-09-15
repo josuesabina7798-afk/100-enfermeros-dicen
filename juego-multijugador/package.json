@@ -1,0 +1,12 @@
+{
+  "name": "100-enfermeros-dicen",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Juego multijugador de 100 Mexicanos Dijeron, edicion enfermeria.",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

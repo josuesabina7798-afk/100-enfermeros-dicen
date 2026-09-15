@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: 100-enfermeros-dicen
+    runtime: node
+    plan: free
+    rootDir: juego-multijugador
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /api/state
