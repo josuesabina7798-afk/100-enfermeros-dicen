@@ -370,6 +370,26 @@ code {
   animation: winner-reveal 720ms cubic-bezier(0.18, 0.89, 0.32, 1.28);
 }
 
+.winner-close {
+  justify-self: center;
+  margin-top: 18px;
+  padding: 14px 22px;
+  border: 2px solid #ffffff;
+  border-radius: 8px;
+  color: #be2f75;
+  background: #ffffff;
+  font: inherit;
+  font-size: clamp(16px, 2vw, 24px);
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.winner-close:hover,
+.winner-close:focus-visible {
+  color: #ffffff;
+  background: transparent;
+}
+
 .effect-buzz .buzz-status {
   animation: buzz-pop 520ms ease-out;
 }

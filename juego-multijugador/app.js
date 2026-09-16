@@ -324,6 +324,7 @@ function renderScreen() {
         <span>${gameWinner.team === null ? "Resultado final" : "Equipo ganador"}</span>
         <strong>${esc(gameWinner.name)}</strong>
         <b>${gameWinner.team === null ? "Los dos equipos terminaron con el mismo puntaje" : `${gameWinner.score} puntos`}</b>
+        <button class="winner-close" id="closeWinner" type="button">Cerrar anuncio y volver al inicio</button>
       </section>
     ` : ""}
     ${feedbackType === "time-up" ? `<div class="time-up-alert" role="status">Tiempo terminado</div>` : ""}
@@ -382,6 +383,13 @@ function renderScreen() {
       </div>
     </section>
   `;
+
+  const closeWinner = document.querySelector("#closeWinner");
+  if (closeWinner) {
+    closeWinner.addEventListener("click", async () => {
+      await post("/api/game/home");
+    });
+  }
 }
 
 function renderPlayer() {
