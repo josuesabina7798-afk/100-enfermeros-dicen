@@ -238,8 +238,7 @@ function renderScreen() {
     app.innerHTML = `
       <section class="lobby-hero">
         <div class="lobby-copy">
-          <p class="eyebrow">100 Mexicanos Dijeron</p>
-          <h1>Edicion Enfermeria</h1>
+          <h1>100 Enfermeros Dijeron</h1>
           <p>Escaneen el codigo para registrar los celulares. Cuando el admin inicie la ronda, esta pantalla desaparece y comienza el tablero.</p>
         </div>
 
@@ -344,7 +343,7 @@ function renderScreen() {
 
     <section class="stage">
       <div class="question-block">
-        <p class="eyebrow">100 Mexicanos Dijeron - Edicion Enfermeria</p>
+        <p class="eyebrow">100 Enfermeros Dijeron</p>
         <h1>${esc((round && round.question) || "Configura la primera ronda en el panel de admin")}</h1>
         <div class="status-stack">
           <div class="buzz-status ${winner ? "is-winner" : ""}">
